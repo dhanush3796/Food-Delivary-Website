@@ -6,6 +6,8 @@ import PlaceOrder from "./pages/placeOrder/PlaceOrder"
 import Footer from "./components/footer/Footer"
 import { useState } from "react"
 import LoginPopUp from "./components/loginPopUp/LoginPopUp"
+import Varify from "./pages/varify/varify"
+import MyOrders from "./pages/myOrders/MyOrders"
 function App() {
   const [showLogin,setShowLogin]=useState(false);
   return (
@@ -17,6 +19,8 @@ function App() {
               <Route path="/" element={<Home/>}/>
               <Route path="cart" element={<Cart/>}/>
               <Route path="order" element={<PlaceOrder/>}/>
+              <Route path="verify" element={<Varify/>}/>
+              <Route path="myorders" element={<MyOrders/>}/>
             </Routes>
         </div>
         <Footer/>
